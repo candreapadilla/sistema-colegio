@@ -11,14 +11,18 @@ function SearchBar({ buscarEstudiante }) {
   }
 
   return (
-    <div className="search">
-      <h2>Buscar estudiante</h2>
+    // Diseño de la barra de búsqueda implementado con Tailwind CSS
+    <div className="bg-purple-50 p-5 rounded-lg mb-6 shadow">
+      <h2 className="text-xl font-bold text-purple-800 mb-3">
+        Buscar estudiante
+      </h2>
 
       <input
         type="text"
         placeholder="Buscar estudiante por nombre"
         value={texto}
         onChange={cambiarTexto}
+        className="w-full p-3 border border-purple-200 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-400"
       />
     </div>
   )
